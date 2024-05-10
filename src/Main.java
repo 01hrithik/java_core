@@ -10,5 +10,7 @@ public class Main {
         System.out.println("sum of two value is : " +(9 + 1));
         char c = 'a';
         System.out.println(c);
+        c++;
+        System.out.println(c);
     }
 }
