@@ -7,7 +7,8 @@ public class Main {
         for (int i = 1; i <= 5; i++) {
             System.out.println("Hello World");
         }
-
         System.out.println("sum of two value is : " +(9 + 1));
+        char c = 'a';
+        System.out.println(c);
     }
 }
