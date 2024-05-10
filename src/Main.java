@@ -29,11 +29,18 @@ public class Main {
         System.out.println(result);
 
   double love = 8.00;
-  double hate = 7.69;
+  double hate = 7.99;
 
   boolean desire = love >=hate;
         System.out.println(desire);
 
+    int punk = 6;
+    int luck = 9;
+    int ace = 5;
+    int loop = 8;
 
+    boolean bull = punk > ace;
+        System.out.println(!bull);
+        //condition statements.
     }
 }
