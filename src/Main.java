@@ -19,13 +19,14 @@ public class Main {
        byte k =(byte)a;
        System.out.println(k);
 
-       byte x = 10;
-       byte y = 30;
-       int result = x * y;
-        System.out.println(result);
+
 
         //assing opertor.
-
+        byte x = 10;
+        byte y = 30;
+        int result = x - y;
+        result-=100;
+        System.out.println(result);
 
     }
 }
