@@ -14,6 +14,10 @@ public class Main {
         System.out.println(c);
 
         //convesion num.
+//       byte l = 127;
+       int a = 12;
+       byte k =(byte)a;
+       System.out.println(k);
 
     }
 }
