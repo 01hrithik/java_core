@@ -28,5 +28,12 @@ public class Main {
         result-=100;
         System.out.println(result);
 
+  double love = 8.00;
+  double hate = 7.69;
+
+  boolean desire = love >=hate;
+        System.out.println(desire);
+
+
     }
 }
