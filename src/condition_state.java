@@ -10,5 +10,11 @@ public class condition_state {
             System.out.println("you're not eligible for vote");
         }
 
+        //compare number.
+        int num_1=call.nextInt();
+        int num_2=call.nextInt();
+        int num_3=call.nextInt();
+
+
     }
 }
