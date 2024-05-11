@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class condition_state {
     public static void main(String args[]){
         Scanner call = new Scanner(System.in);
+        System.out.print("enter the age :");
          int age = call.nextInt();
         //if condition check.
         if(age >= 18){
@@ -25,5 +26,35 @@ public class condition_state {
         }else{
             System.out.println("the highest num :"+num_3);
         }
+
+        //switch case.
+        int day=call.nextInt();
+        switch(day){
+            case 1:
+                System.out.println("monday");
+                break;
+            case 2:
+                System.out.println("tuesday");
+                break;
+            case 3:
+                System.out.println("wensday");
+                break;
+            case 4:
+                System.out.println("thushday");
+                break;
+            case 5:
+                System.out.println("friday");
+                break;
+            case 6:
+                System.out.println("saturday");
+                break;
+            case 7:
+                System.out.println("sunday");
+                break;
+            default:
+                System.out.println("invaild number");
+
+        }
+
     }
 }
