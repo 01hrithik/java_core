@@ -3,5 +3,9 @@ public class Arra {
 
        int number[] = {4,5,9,6};
        System.out.println(number[3]);
+
+       for(int run=0; run<number.length; run++){
+           System.out.println(number[run]);
+       }
    }
 }
