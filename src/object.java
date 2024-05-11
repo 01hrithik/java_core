@@ -27,14 +27,30 @@ class Calc{
     }
 }
 
+class Computer{
+    public void PlayMusic(){
+        System.out.println("playing love me like you do");
+    }
+
+    public String GetPen(int cost){
+        if(cost <=10){
+            return "buy pen";
+        }
+        return "don't buy pen";
+    }
+}
 public class object {
     public static void main(String args[]){
 
    Calc hi = new Calc();
-   System.out.println(hi.add(5,5));
+        System.out.println(hi.add(5,5));
         System.out.println(hi.add(10,5));
         System.out.println(hi.modulo(10,2));
         System.out.println(hi.multiply(5,6));
         System.out.println(hi.subtract(2,9));
+
+        Computer com = new Computer();
+        com.PlayMusic();
+        System.out.println(com.GetPen(11));
     }
 }
