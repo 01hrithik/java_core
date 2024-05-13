@@ -28,7 +28,22 @@ public class strinl {
         System.out.println("the append is :"+sbi.append(" love"));
         System.out.println("the delete is :"+sbi.deleteCharAt(3));
 
+        //creating mobile object.
 
+        Mobile obj_1= new Mobile();
+        obj_1.brand="ios";
+        obj_1.Name="iphone";
+        obj_1.price=150000;
+        obj_1.Network="jio";
+
+        Mobile obj_2 = new Mobile();
+        obj_2.price=20000;
+        obj_2.Name="poco";
+        obj_2.brand="xiami";
+        obj_2.Network="jio";
+
+        obj_1.Show();
+        obj_2.Show();
 
     }
 }
