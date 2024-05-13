@@ -1,9 +1,12 @@
 class Mobile{
     String brand;
-    String Name;
+    static String Name;
     int price;
     String Network;
-
+    static{
+        Name = "phone";
+        System.out.println();
+    }
     public void Show(){
         System.out.println("BRAND :- "+brand+" "+"NAME :- "+Name+" "+"PRICE :- "+price+" "+"NETWORK :- "+Network);
     }
@@ -31,6 +34,7 @@ public class strinl {
         //creating mobile object.
 
         Mobile obj_1= new Mobile();
+
         obj_1.brand="ios";
         obj_1.Name="iphone";
         obj_1.price=150000;
