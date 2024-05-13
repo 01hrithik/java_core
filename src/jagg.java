@@ -13,5 +13,13 @@ public class jagg {
             }
             System.out.println();
         }
+
+        for(int n[]: array){
+            for(int m:n){
+                System.out.print(m+" ");
+            }
+            System.out.println();
+        }
+
     }
 }
