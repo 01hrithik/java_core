@@ -6,6 +6,13 @@ class Mobile{
     static{
         Name = "phone";
         System.out.println();
+        System.out.println("it is static world!");
+    }
+    public Mobile(){
+        brand ="";
+        price=20000;
+        Name="Smart-phone";
+        System.out.println("it");
     }
     public void Show(){
         System.out.println("BRAND :- "+brand+" "+"NAME :- "+Name+" "+"PRICE :- "+price+" "+"NETWORK :- "+Network);
@@ -49,5 +56,6 @@ public class strinl {
         obj_1.Show();
         obj_2.Show();
 
+        System.out.println(Name.charAt(1));
     }
 }
