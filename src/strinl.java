@@ -1,3 +1,13 @@
+class Mobile{
+    String brand;
+    String Name;
+    int price;
+    String Network;
+
+    public void Show(){
+        System.out.println("BRAND :- "+brand+" "+"NAME :- "+Name+" "+"PRICE :- "+price+" "+"NETWORK :- "+Network);
+    }
+}
 public class strinl {
     public static void main(String args[]){
         String greeting = "Have a good day!";
@@ -17,5 +27,8 @@ public class strinl {
         System.out.println("length of string is :"+sbi.length());
         System.out.println("the append is :"+sbi.append(" love"));
         System.out.println("the delete is :"+sbi.deleteCharAt(3));
+
+
+
     }
 }
