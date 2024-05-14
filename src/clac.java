@@ -1,4 +1,4 @@
-class Clac{
+class Coll{
     public int addition(int num_1,int num_2){
         return num_1+num_2;
     }
@@ -11,18 +11,18 @@ class Clac{
         return num_1*num_2;
     }
 
-    public int divide(int num_1,int num_2){
+    public float divide(float num_1,float num_2){
         return num_1/num_2;
     }
 
-    public int modlue(int num_1,int num_2){
+    public float modlue(float num_1,float num_2){
         return num_1%num_2;
     }
 }
 public class clac {
     public static void main(String args[]){
-        Calc obj = new Calc();
-       int r= obj.add(6,9);
-        System.out.println(r);
+        Coll dor = new Coll();
+        System.out.println(dor.modlue(8,9));
+
     }
 }

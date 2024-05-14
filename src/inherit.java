@@ -7,6 +7,10 @@ class eddie{
         super();
         System.out.println("in eddie phone message pop-up");
     }
+
+    public void config(){
+        System.out.println("in config");
+    }
 }
 
 class meddie extends eddie{
@@ -18,10 +22,15 @@ class meddie extends eddie{
         this();
         System.out.println("in meddie messeg pop up");
     }
+
+    public void config(){
+        System.out.println("in meddie config");
+    }
 }
 
 public class inherit {
     public static void main(String args[]){
-       meddie phone = new meddie(5);
+       meddie call = new meddie();
+       call.config();
     }
 }
