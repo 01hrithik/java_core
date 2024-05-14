@@ -6,12 +6,12 @@ class Human{
         return age;
     }
 
-    public void SetAge(int a){
-        age =a;
+    public void SetAge(int age){
+        this.age =age;
     }
 
-    public void SetName(String n){
-        Name=n;
+    public void SetName(String Name){
+        this.Name=Name;
     }
     public String NAme(){
         return Name;
@@ -21,7 +21,7 @@ class Human{
 public class encap {
     public static void main(String args[]){
    Human gen = new Human();
-   gen.SetAge(22);
+   gen.SetAge(20);
    gen.SetName("Hrithik");
 
    System.out.println("Name:-"+gen.NAme()+" "+"age:-"+gen.getAge());
