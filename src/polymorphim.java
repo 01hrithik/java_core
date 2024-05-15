@@ -17,7 +17,7 @@ class C extends B{
 }
 
  class Col{
-    public  void show() {
+    public void show() {
         System.out.println("by hrithik");
     }
 
