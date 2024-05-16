@@ -6,8 +6,17 @@ public class expect {
         {
             j=20/value;
         }catch (Exception e){
-           System.out.println("Somethig wrong!");
+           System.out.println("Somethig wrong!"+" -> "+e);
        }
         System.out.println(j);
+
+       int num[] = new int[5];
+       try{
+           System.out.println(num[5]);
+       }catch (Exception F){
+           System.out.println("wrong dude!"+" -> "+F);
+       }
+
+       //throw.
     }
 }
