@@ -1,0 +1,2 @@
+public class enum_ {
+}
