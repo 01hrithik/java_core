@@ -1,31 +1,31 @@
-class Hate extends Thread{
-    public void run(){
-        for (int i = 0; i <10 ; i++) {
-            System.out.println("i hate you"+" "+i);
-            try {
-                Thread.sleep(1);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-        }
-    }
-}
 
-class LOVE extends Thread{
-    public void run(){
-        for (int i = 0; i <10 ; i++) {
-            System.out.println("i love you"+" "+i);
-        }
+class Counter{
+    int count;
+    public synchronized void increment(){
+        count++;
     }
 }
 public class th {
-    public static void main(String[] args) {
- Hate iol =  new Hate();
- LOVE loi = new LOVE();
-        System.out.println(iol.getPriority());
-        loi.setPriority(Thread.MAX_PRIORITY);
- iol.start();
- loi.start();
+    public static void main(String[] args) throws InterruptedException {
+        Counter c = new Counter();
+ Runnable iol = ()->{
+     for (int i = 1; i <10000 ; i++) {
+        c.increment();
+     }
+ };
+
+ Runnable loi = ()->{
+     for (int i = 1; i <10000 ; i++) {
+           c.increment();
+        }
+        };
+    Thread t1 = new Thread(iol);
+    Thread t2 = new Thread(loi);
+ t1.start();
+ t2.start();
+ t1.join();
+ t2.join();
+        System.out.println(c.count);
 
     }
 }
